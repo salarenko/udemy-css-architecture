@@ -1,5 +1,5 @@
-    $ cat .git/info/exclude
-    *.[img]
-    $ git status
-    [...]
-    # Untracked files:
+# dependencies
+/node_modules
+
+# assets
+/img
