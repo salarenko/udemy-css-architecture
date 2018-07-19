@@ -1,6 +1,9 @@
 
 .btn {
+    border: none;
+    cursor: pointer;
 
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -22,7 +25,8 @@
         }
     }
     
-    &:active {
+    &:active,
+    &:focus {
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
     }
@@ -46,6 +50,16 @@
     
         &::after {
             background-color: $color-white;
+        }
+    }
+
+
+    &--green {
+        background-color: $color-medium-green;
+        color:$color-white;
+    
+        &::after {
+            background-color: $color-light-green;
         }
     }
 
